@@ -4,8 +4,8 @@ import seaborn as sns
 import streamlit as st
 
 # Load data
-hour_df = pd.read_csv('/workspaces/ProyekBelajarAnalisisData/dashboard/hour.csv')
-day_df = pd.read_csv('/workspaces/ProyekBelajarAnalisisData/dashboard/day.csv')
+hour_df = pd.read_csv('hour.csv')
+day_df = pd.read_csv('day.csv')
 
 # Ubah dteday ke tipe datetime
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
