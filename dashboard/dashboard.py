@@ -7,6 +7,7 @@ import streamlit as st
 hour_df = pd.read_csv('/workspaces/ProyekBelajarAnalisisData/dashboard/hour.csv')
 day_df = pd.read_csv('/workspaces/ProyekBelajarAnalisisData/dashboard/day.csv')
 
+
 # Ubah dteday ke tipe datetime
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
